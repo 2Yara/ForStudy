@@ -7,6 +7,8 @@ class Programm
         Console.WriteLine("Введите a: ");
         double a = Convert.ToDouble(Console.ReadLine());
 
+        if (a <= 0) { Console.WriteLine("Переменная а должна быты положительной! >:("); return;}
+
         double t1 = (a + 2) / Math.Sqrt(2 * a);
         double t2 = a / (Math.Sqrt(2 * a) + 2);
         double t3 = 2 / (a - Math.Sqrt(2 * a));
