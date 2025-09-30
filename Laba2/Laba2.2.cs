@@ -11,7 +11,7 @@ class Programm
 
     if ((-10 <= x) && (x <= -6)) {
       double R = 2;
-      y = Math.Sqrt(R*R - x*x) - 2;
+      y = Math.Sqrt(R*R - (x+8)*(x+8)) - 2;
       Console.WriteLine($"if x = {x:F6}");
       Console.WriteLine($"then y = {y:F6}");
       return;
