@@ -7,16 +7,17 @@ class Programm
   Console.WriteLine("Enter x: ");
 
     double x = Convert.toDouble(Console.ReadLine());
+    double y;
 
     if ((-10 <= x) && (x <= -6)) {
       double R = 2;
-      double y = Math.Sqrt(R*R - x*x) - 2;
+      y = Math.Sqrt(R*R - x*x) - 2;
       Console.WriteLine($"if x = {x:F6}");
       Console.WriteLine($"then y = {y:F6}");
       return;
     }
     else if ((-6 < x) && (x <= 2)) {
-      double y = 1 + x/2;
+      y = 1 + x/2;
       Console.WriteLine($"if x = {x:F6}");
       Console.WriteLine($"then y = {y:F6}");
       return;
@@ -26,7 +27,7 @@ class Programm
       return;
     }
     else if ((6 <= x) && (x <= 8)) {
-      double y = Math.Pow((x - 6), 2);
+      y = Math.Pow((x - 6), 2);
       Console.WriteLine($"if x = {x:F6}");
       Console.WriteLine($"then y = {y:F6}");
       return;
