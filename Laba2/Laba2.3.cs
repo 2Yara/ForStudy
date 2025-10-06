@@ -3,23 +3,31 @@ using System;
 class Program {
   static void Main() {
     Console.WriteLine("Введите радиус: ");
-    double R = Convert.toDouble(Console.ReadLine());
+//    double R = Convert.toDouble(Console.ReadLine());
+    double R = 5;
     Console.WriteLine("Введите координату x: ");
-    double x = Convert.toDouble(Console.ReadLine());
+//    double x = Convert.toDouble(Console.ReadLine());
+    double x = 1;
+    Console.WriteLine("Введите координату y: ");
+    //double y1 = Convert.toDouble(Console.ReadLine());
+    double y1 = 1;
     double y;
     if (x >= -R && x <= 0) {
-      Console.WriteLine("Введите координату y: ");
-      double y1 = Convert.toDouble(Console.ReadLine());
-      //написать функцию, в которой у сравнивается с R и если координата у = R или меньше 
-      //и сделать сравнение у и у1, т к прямые у = х и у = -х 
-      if () {
+      y = -x; 
+      double y2 = x;
+      if (y1 >= 0 && y1 <= y) {
+        Console.WriteLine($$"Координата [{x:F6},{y1:F6}] входит в область");
+        return;
+      }
+      if (y1 <= 0 && y1 >= y2) {
+        Console.WriteLine($$"Координата [{x:F6},{y1:F6}] входит в область");
         return;
       }
     }
     else if ((x >= 0) && (x <= R)) {
       y = Math.Sqrt(R*R - x*x);
-      //сделать сравнение у и у1 и если они совпадают или у1 меньше/больше у то точка входит в серую окружность
-      if () {
+      if ((y >= y1) && (-y <= y1)) {
+        Console.WriteLine($$"Координата [{x:F6},{y1:F6}] входит в область");
         return;
       }
     }
