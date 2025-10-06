@@ -23,7 +23,9 @@ class Programm
       return;
     }
     else if ((2 < x) && (x < 6)) {
-      Console.WriteLine("f(x) is not defined");
+      y = 0;
+      Console.WriteLine($"if x = {x:F6}");
+      Console.WriteLine($"then y = {y:F6}");
       return;
     }
     else if ((6 <= x) && (x <= 8)) {
