@@ -16,11 +16,11 @@ class Program {
       y = x; 
       double y2 = -x;
       if ((y1 > 0) && (y1 <= R && y1 >= y)) {
-        Console.WriteLine($"Coordinate [{x:F2},{y1:F2}] входит в область");
+        Console.WriteLine($"Coordinate [{x:F2},{y1:F2}] included within range");
         return;
       }
       else if ((y1 < 0) && (y1 >= -R && y1 <= y)) {
-        Console.WriteLine($"Coordinate [{x:F2},{y1:F2}] входит в область");
+        Console.WriteLine($"Coordinate [{x:F2},{y1:F2}] included within range");
         return;
       }
       else {
@@ -30,7 +30,7 @@ class Program {
     else if ((x >= 0) && (x <= R)) {
       y = Math.Sqrt(R*R - x*x);
       if ((y >= y1) && (-y <= y1)) {
-        Console.WriteLine($"Coordinate [{x:F2},{y1:F2}] входит в область");
+        Console.WriteLine($"Coordinate [{x:F2},{y1:F2}] included within range");
         return;
       }
     }
