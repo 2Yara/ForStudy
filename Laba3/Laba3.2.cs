@@ -2,33 +2,32 @@ using System;
 
 class Program {
   double R = 5;
-  static void Mishen() {
-    double x = R;
+  static void Mishen(double Xshot, double Yshot) {
     double y;
     if (Xshot >= -R && Xshot <= 0) {
-      y = x; 
-      double y2 = -x;
+      y = R; 
+      double y2 = -R;
       if ((Yshot > 0) && (Yshot <= R && Yshot >= y)) {
-        Console.WriteLine($"Bullet [{x:F2},{y1:F2}] hit the target");
+        Console.WriteLine($"Bullet [{Xshot:F2},{Yshot:F2}] hit the target");
         return;
       }
       else if ((Yshot < 0) && (Yshot >= -R && Yshot <= y)) {
-        Console.WriteLine($"Bullet [{x:F2},{y1:F2}] hit the target");
+        Console.WriteLine($"Bullet [{Xshot:F2},{Yshot:F2}] hit the target");
         return;
       }
       else {
-          Console.WriteLine("Bullet [{x:F2},{y1:F2}] DID NOT hit the target");
+          Console.WriteLine("Bullet [{Xshot:F2},{Yshot:F2}] DID NOT hit the target");
       }
     }
     else if ((Xshot >= 0) && (Xshot <= R)) {
-      y = Math.Sqrt(R*R - x*x);
+      y = Math.Sqrt(R*R - R*R);
       if ((y >= Yshot) && (-y <= Yshot)) {
-        Console.WriteLine($"Bullet [{x:F2},{y1:F2}] hit the target");
+        Console.WriteLine($"Bullet [{Xshot:F2},{Yshot:F2}] hit the target");
         return;
       }
     }
     else {
-      Console.WriteLine("Bullet [{x:F2},{y1:F2}] DID NOT hit the target");
+      Console.WriteLine("Bullet [{Xshot:F2},{Yshot:F2}] DID NOT hit the target");
       return;
     }
   }
@@ -50,5 +49,6 @@ class Program {
             
             Mishen(Xshot, Yshot);
     return;
- }
+     }
+  }
 }
